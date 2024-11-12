@@ -4,7 +4,7 @@ Submitted by: **Salman Khan**
 
 This web app: **it is using supabase databases and creates a crewmate as well as deletes it also**
 
-Time spent: **X** hours spent in total
+Time spent: **8** hours spent in total
 
 ## Required Features
 
