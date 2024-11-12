@@ -1,0 +1,30 @@
+.create-crewmate-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  .create-crewmate-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-crewmate-form input,
+  .create-crewmate-form select {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .create-crewmate-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+  }

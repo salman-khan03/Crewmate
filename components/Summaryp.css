@@ -1,0 +1,30 @@
+.crewmate-list {
+    list-style: none;
+    padding: 0;
+}
+
+.crewmate-list li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.crewmate-list li.success-High {
+    border-color: #28a745;
+    background-color: #d4edda;
+}
+
+.crewmate-list li.success-Medium {
+    border-color: #ffc107;
+    background-color: #fff3cd;
+}
+
+.crewmate-list li.success-Low {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+}
+  
