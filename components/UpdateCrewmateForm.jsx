@@ -1,22 +1,22 @@
 import React, { useState } from 'react'
-import { supabase } from '../supabaseClient'
+import { createClient } from '@supabase/supabase-js';
 
-function UpdateCrewmateForm({ crewmate, onUpdateComplete }) {
-  const [name, setName] = useState(crewmate.name)
-  const [attributes, setAttributes] = useState(crewmate.attributes ? crewmate.attributes.join(', ') : '')
+const UpdateCrewmateForm = ({ crewmate, onUpdateComplete }) => {
+  const [name, setName] = useState(crewmate?.name || '')
+  const [attributes, setAttributes] = useState(crewmate?.attributes || '')
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const updatedAttributes = attributes.split(',').map(attr => attr.trim())
+    if (!crewmate) {
+      console.error('No crewmate provided');
+      return;
+    }
     const { data, error } = await supabase
       .from('crewmates')
-      .update({ name, attributes: updatedAttributes })
+      .update({ name, attributes })
       .eq('id', crewmate.id)
-    if (error) {
-      console.error(error)
-    } else if (data && data.length > 0) {
-      onUpdateComplete(data[0])
-    }
+    if (error) console.error(error)
+    else onUpdateComplete(data[0])
   }
 
   return (
