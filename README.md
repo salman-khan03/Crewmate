@@ -1,10 +1,10 @@
-# Web Development Project 7 - *Name of App Here*
+# Web Development Project 7 - Crewmates
 
-Submitted by: **Your Name Here**
+Submitted by: **Salman Khan**
 
-This web app: **insert description**
+This web app: **A React-based web application for creating and managing crewmates using Supabase as the backend database. This project demonstrates full CRUD (Create, Read, Update, Delete) operations with a modern, responsive UI.**
 
-Time spent: **X** hours spent in total
+Time spent: **10** hours spent in total
 
 ## Required Features
 
